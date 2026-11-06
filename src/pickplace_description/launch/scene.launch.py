@@ -1,9 +1,17 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, TimerAction
+from launch.actions import ExecuteProcess, IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
+
+
+def spawn(name, my_share):
+    return Node(
+        package='ros_gz_sim', executable='create',
+        arguments=['-file', os.path.join(my_share, 'worlds', name + '.sdf'),
+                   '-name', name],
+        output='screen')
 
 
 def generate_launch_description():
@@ -15,13 +23,17 @@ def generate_launch_description():
             os.path.join(ur_share, 'launch', 'ur_sim_moveit.launch.py')),
         launch_arguments={'ur_type': 'ur5e'}.items())
 
-    spawners = []
-    for name in ['table', 'red_cube', 'green_cube', 'overhead_camera']:
-        spawners.append(Node(
-            package='ros_gz_sim', executable='create',
-            arguments=['-file', os.path.join(my_share, 'worlds', name + '.sdf'),
-                       '-name', name],
-            output='screen'))
+    # Load the Sensors system into the running world (needed for camera images)
+    load_sensors = ExecuteProcess(
+        cmd=['gz', 'service', '-s', '/world/empty/entity/system/add',
+             '--reqtype', 'gz.msgs.EntityPlugin_V',
+             '--reptype', 'gz.msgs.Boolean',
+             '--timeout', '5000',
+             '--req',
+             'entity {id: 1} plugins {filename: "gz-sim-sensors-system" '
+             'name: "gz::sim::systems::Sensors" '
+             'innerxml: "<render_engine>ogre2</render_engine>"}'],
+        output='screen')
 
     bridge = Node(
         package='ros_gz_bridge', executable='parameter_bridge',
@@ -32,7 +44,10 @@ def generate_launch_description():
         ],
         output='screen')
 
-    # Wait 10 s so Gazebo is fully up before spawning anything
-    delayed = TimerAction(period=10.0, actions=spawners + [bridge])
+    t_objects = TimerAction(period=10.0, actions=[
+        spawn('table', my_share), spawn('red_cube', my_share),
+        spawn('green_cube', my_share), load_sensors])
+    t_camera = TimerAction(period=15.0, actions=[
+        spawn('overhead_camera', my_share), bridge])
 
-    return LaunchDescription([ur_sim, delayed])
+    return LaunchDescription([ur_sim, t_objects, t_camera])
