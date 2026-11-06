@@ -1,1 +1,2 @@
 - Step 1 done: UR5e + MoveIt running in Gazebo (ros2 launch ur_simulation_gz ur_sim_moveit.launch.py ur_type:=ur5e)
+- Step 2 done: table, cubes, overhead RGB-D camera. Sensors system is loaded by scene.launch.py via gz service (needed because ur_sim_moveit uses an empty world). CPU rendering (llvmpipe) so camera runs slowly.
