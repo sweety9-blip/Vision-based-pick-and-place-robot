@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'object_detector = pickplace_perception.object_detector:main',
         ],
     },
 )
