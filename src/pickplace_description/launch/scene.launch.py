@@ -6,11 +6,13 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 
 
-def spawn(name, my_share):
+def spawn(name, my_share, x, y, z, pitch=0.0):
     return Node(
         package='ros_gz_sim', executable='create',
         arguments=['-file', os.path.join(my_share, 'worlds', name + '.sdf'),
-                   '-name', name],
+                   '-name', name,
+                   '-x', str(x), '-y', str(y), '-z', str(z),
+                   '-R', '0', '-P', str(pitch), '-Y', '0'],
         output='screen')
 
 
@@ -23,7 +25,6 @@ def generate_launch_description():
             os.path.join(ur_share, 'launch', 'ur_sim_moveit.launch.py')),
         launch_arguments={'ur_type': 'ur5e'}.items())
 
-    # Load the Sensors system into the running world (needed for camera images)
     load_sensors = ExecuteProcess(
         cmd=['gz', 'service', '-s', '/world/empty/entity/system/add',
              '--reqtype', 'gz.msgs.EntityPlugin_V',
@@ -44,10 +45,12 @@ def generate_launch_description():
         ],
         output='screen')
 
-    t_objects = TimerAction(period=10.0, actions=[
-        spawn('table', my_share), spawn('red_cube', my_share),
-        spawn('green_cube', my_share), load_sensors])
-    t_camera = TimerAction(period=15.0, actions=[
-        spawn('overhead_camera', my_share), bridge])
+    t_sensors = TimerAction(period=10.0, actions=[load_sensors])
+    t_objects = TimerAction(period=15.0, actions=[
+        spawn('table', my_share, 0.25, 0.0, 0.005),
+        spawn('red_cube', my_share, 0.5, 0.1, 0.04),
+        spawn('green_cube', my_share, 0.55, -0.1, 0.04)])
+    t_camera = TimerAction(period=20.0, actions=[
+        spawn('overhead_camera', my_share, 0.55, 0.0, 1.0, 1.5708), bridge])
 
-    return LaunchDescription([ur_sim, t_objects, t_camera])
+    return LaunchDescription([ur_sim, t_sensors, t_objects, t_camera])

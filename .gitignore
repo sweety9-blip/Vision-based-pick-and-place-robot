@@ -4,3 +4,5 @@ log/
 __pycache__/
 *.pyc
 launch.log
+frame.png
+detected.png
