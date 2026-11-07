@@ -604,3 +604,21 @@ WARNING:root:[33;21mThe robot description will be loaded from /robot_descriptio
 [move_group-8] [INFO] [1794073851.818193268] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
 [move_group-8] [INFO] [1794073851.818352124] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
 [move_group-8] [INFO] [1794073851.825880423] [move_group.moveit.moveit.ros.move_group.move_action]: Solution was found and executed.
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:137] [0m[1;36mDetach topic is: [0m[1;36m/model/ur/detachable_joint/detach[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:143] [0m[1;36mDetachableJoint subscribing to messages on [0m[1;36m[[0m[1;36m/model/ur/detachable_joint/detach[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:160] [0m[1;36mAttach topic is: [0m[1;36m/model/ur/detachable_joint/attach[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:195] [0m[1;36mOutput topic is: [0m[1;36m/model/red_cube/detachable_joint/state[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::DetachableJoint[0m[1;36m] for entity [[0m[1;36m10[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m5[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:343] [0m[1;36mAttaching entity: [0m[1;36m55[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2044] [0m[1;36mCreating detachable joint [[0m[1;36m55[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [DetachableJoint.cc:360] [0m[1;36mRemoving entity: [0m[1;36m55[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:2199] [0m[1;36mDetaching joint [[0m[1;36m55[0m[1;36m][0m[1;36m[0m
