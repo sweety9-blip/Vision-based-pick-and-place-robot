@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [   'move_to_cube = pickplace_manipulation.move_to_cube:main',
-        'pick_descend = pickplace_manipulation.pick_descend:main',
+        'pick_descend = pickplace_manipulation.pick_descend:main',            'pick_place = pickplace_manipulation.pick_place:main',
         ],
     },
 )
