@@ -6,3 +6,4 @@
 - Step 4b verified: hover within ~7 mm, descent to 5 cm above cube within 0.7 mm. MoveIt 99999 was an OMPL planning timeout (10 s), not stale state. Fix: allowed_planning_time 30 s, tilt tolerance 0.25 rad. First plan took ~28 s.
 - Gripper: DetachableJoint loaded once per session via gz service (entity id 10, parent wrist_3_link, child red_cube/link). Then /model/ur/detachable_joint/attach and /detach (gz.msgs.Empty) re-weld and release. Verified: carried z=0.286, release z=0.035, re-attach lift z=0.289.
 - The overhead camera cannot see a cube while the arm is above it, so detect once before moving and reuse the stored position.
+- Step 4c done: pick_place.py runs detect, hover, descend, attach, lift, carry, lower, detach, report. Run 1: place error 10 mm but cube stayed stuck (z 0.281, cause unknown). Run 2: SUCCESS, place error 20 mm, cycle 95 s. First hover plan often times out (99999); retry handles it.
