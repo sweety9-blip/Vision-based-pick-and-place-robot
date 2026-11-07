@@ -1,3 +1,4 @@
 - Step 1 done: UR5e + MoveIt running in Gazebo (ros2 launch ur_simulation_gz ur_sim_moveit.launch.py ur_type:=ur5e)
 - Step 2 done: table, cubes, overhead RGB-D camera. Sensors system is loaded by scene.launch.py via gz service (needed because ur_sim_moveit uses an empty world). CPU rendering (llvmpipe) so camera runs slowly.
 - Step 3a: pickplace_perception package. color_detector.py finds red and green cubes by HSV thresholding. Test offline: python3 src/pickplace_perception/pickplace_perception/color_detector.py frame.png
+- Step 3b: pixel_to_world.py converts pixel + depth to world x,y,z using a fixed camera pose (0.55, 0, 1.0, looking down). Mapping: image-right = world -y, image-down = world -x. Verified within 3 mm on frame.png.
