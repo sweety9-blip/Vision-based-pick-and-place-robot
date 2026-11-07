@@ -1,0 +1,606 @@
+[INFO] [launch]: All log files can be found below /home/sweety_rathod/.ros/log/2026-11-07-17-47-19-747397-LAPTOP-O7UDP0B5-1058
+[INFO] [launch]: Default logging verbosity is set to INFO
+WARNING:root:[33;21mCannot infer URDF from `/opt/ros/jazzy/share/ur_moveit_config`. -- using config/ur.urdf[0m
+WARNING:root:[33;21mCannot infer SRDF from `/opt/ros/jazzy/share/ur_moveit_config`. -- using config/ur.srdf[0m
+WARNING:root:[33;21m"File /opt/ros/jazzy/share/ur_moveit_config/config/ur.urdf doesn't exist"[0m
+WARNING:root:[33;21mThe robot description will be loaded from /robot_description topic [0m
+[INFO] [robot_state_publisher-1]: process started with pid [1094]
+[INFO] [spawner-2]: process started with pid [1095]
+[INFO] [spawner-3]: process started with pid [1096]
+[INFO] [create-4]: process started with pid [1097]
+[INFO] [gazebo-5]: process started with pid [1098]
+[INFO] [parameter_bridge-6]: process started with pid [1099]
+[INFO] [wait_for_robot_description-7]: process started with pid [1101]
+[create-4] [INFO] [1794073641.156554282] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-1] [INFO] [1794073641.185446056] [robot_state_publisher]: Robot initialized
+[parameter_bridge-6] [INFO] [1794073641.211316395] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[wait_for_robot_description-7] [INFO] [1794073641.773635387] [wait_for_robot_description]: Waiting for message on /robot_description.
+[spawner-3] [INFO] [1794073641.816615165] [spawner_scaled_joint_trajectory_controller]: waiting for service /controller_manager/list_controllers to become available...
+[wait_for_robot_description-7] [INFO] [1794073641.861391479] [wait_for_robot_description]: Received message on /robot_description. Shutting down.
+[INFO] [wait_for_robot_description-7]: process has finished cleanly [pid 1101]
+[INFO] [move_group-8]: process started with pid [1212]
+[INFO] [rviz2-9]: process started with pid [1213]
+[gazebo-5] [1;36m[Dbg] [gz.cc:166] [0m[1;36mSubscribing to [[0m[1;36m/gazebo/starting_world[0m[1;36m].[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [gz.cc:168] [0m[1;36mWaiting for a world to be set from the GUI...[0m[1;36m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mReceived world [[0m[1;32mempty.sdf[0m[1;32m] from the GUI.[0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [gz.cc:172] [0m[1;36mUnsubscribing from [[0m[1;36m/gazebo/starting_world[0m[1;36m].[0m[1;36m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.15.0[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/share/gz/gz-sim8/worlds/empty.sdf[0m[1;32m].[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [Physics.cc:1004] [0m[1;36mLoaded [[0m[1;36mgz::physics::dartsim::Plugin[0m[1;36m] from library [[0m[1;36m/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Physics[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/empty/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/empty/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/empty/remove[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/empty/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/empty/set_pose[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/empty/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/empty/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/empty/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/empty/light_config[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/empty/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/empty/set_physics[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/empty/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/empty/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/empty/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/empty/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/empty/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/empty/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/empty/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/empty/visual_config[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/empty/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/empty/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
+[rviz2-9] [INFO] [1794073642.484974116] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-9] [INFO] [1794073642.485189932] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-9] [INFO] [1794073642.575844847] [rviz2]: Stereo is NOT SUPPORTED
+[create-4] [INFO] [1794073642.583388709] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-4]: process has finished cleanly [pid 1097]
+[rviz2-9] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[rviz2-9]          at line 321 in /opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp
+[rviz2-9] [WARN] [1794073642.804312399] [rcl.logging_rosout]: Publisher already registered for node name: 'rviz2_moveit'. If this is due to multiple nodes with the same name then all logs for the logger named 'rviz2_moveit' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[gazebo-5] [1;32m[[1;32m[Msg] [0m[1;32mGazebo Sim GUI    v[0m[1;32m8.15.0[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mDetected Wayland. Setting Qt to use the xcb plugin: [0m[1;32m'QT_QPA_PLATFORM=xcb'.[0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [Gui.cc:276] [0m[1;36mWaiting for subscribers to [[0m[1;36m/gazebo/starting_world[0m[1;36m]...[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Application.cc:96] [0m[1;36mInitializing application.[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Application.cc:170] [0m[1;36mQt using OpenGL graphics interface[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:657] [0m[1;36mCreate main window[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [PathManager.cc:68] [0m[1;36mRequesting resource paths through [[0m[1;36m/gazebo/resource_paths/get[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Gui.cc:356] [0m[1;36mGUI requesting list of world names. The server may be busy [0m[1;36mdownloading resources. Please be patient.[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [PathManager.cc:57] [0m[1;36mReceived resource paths.[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Gui.cc:414] [0m[1;36mRequesting GUI from [[0m[1;36m/world/empty/gui/info[0m[1;36m]...[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [GuiRunner.cc:149] [0m[1;36mRequesting initial state from [[0m[1;36m/world/empty/state[0m[1;36m]...[0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoading config [[0m[1;32m/home/sweety_rathod/.gz/sim/8/gui.config[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mMinimalScene[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [MinimalScene.cc:802] [0m[1;36mCreating gz-rendering interface for OpenGL[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [MinimalScene.cc:802] [0m[1;36mCreating gz-rendering interface for OpenGL[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [MinimalScene.cc:986] [0m[1;36mCreating render thread interface for OpenGL[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [MinimalScene.cc:802] [0m[1;36mCreating gz-rendering interface for OpenGL[0m[1;36m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [MinimalScene.cc:986] [0m[1;36mCreating render thread interface for OpenGL[0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32m3D View[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mMinimalScene[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libMinimalScene.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mEntityContextMenuPlugin[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCurrently tracking topic on [[0m[1;32m/gui/currently_tracked[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mEntity Context Menu[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mEntityContextMenuPlugin[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libEntityContextMenuPlugin.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mGzSceneManager[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mScene Manager[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mGzSceneManager[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libGzSceneManager.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mInteractiveViewControl[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCamera view controller topic advertised on [[0m[1;32m/gui/camera/view_control[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCamera reference visual topic advertised on [[0m[1;32m/gui/camera/view_control/reference_visual[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCamera view control sensitivity advertised on [[0m[1;32m/gui/camera/view_control/sensitivity[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mInteractive view control[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mInteractiveViewControl[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libInteractiveViewControl.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mCameraTracking[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mCamera tracking[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mCameraTracking[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libCameraTracking.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mMarkerManager[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mListening to stats on [[0m[1;32m/world/empty/stats[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mMarker Manager[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mMarkerManager[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libMarkerManager.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mSelectEntities[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mSelect entities[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mSelectEntities[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libSelectEntities.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mSpawn[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mSpawn[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mSpawn[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libSpawn.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mVisualizationCapabilities[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView as transparent service on [[0m[1;32m/gui/view/transparent[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView as wireframes service on [[0m[1;32m/gui/view/wireframes[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView center of mass service on [[0m[1;32m/gui/view/com[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView inertia service on [[0m[1;32m/gui/view/inertia[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView collisions service on [[0m[1;32m/gui/view/collisions[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView joints service on [[0m[1;32m/gui/view/joints[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView frames service on [[0m[1;32m/gui/view/frames[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mVisualization capabilities[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mVisualizationCapabilities[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libVisualizationCapabilities.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mWorldControl[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mUsing world control service [[0m[1;32m/world/empty/control[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mListening to stats on [[0m[1;32m/world/empty/stats[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [WorldControl.cc:237] [0m[1;36mUsing an event to share WorldControl msgs with the server[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mWorld control[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mWorldControl[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libWorldControl.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mWorldStats[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mListening to stats on [[0m[1;32m/world/empty/stats[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mWorld stats[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mWorldStats[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libWorldStats.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mShapes[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mShapes[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mShapes[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libShapes.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mLights[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mLights[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mLights[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libLights.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mTransformControl[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mTransform control[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mTransformControl[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libTransformControl.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mScreenshot[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mScreenshot service on [[0m[1;32m/gui/screenshot[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mScreenshot[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mScreenshot[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libScreenshot.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mCopyPaste[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mCopy/Paste[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mCopyPaste[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libCopyPaste.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mComponentInspector[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mComponent inspector[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mComponentInspector[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libComponentInspector.so[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mEntityTree[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCurrently tracking topic on [[0m[1;32m/gui/currently_tracked[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/WorldStats/WorldStats.qml:53:3: QML RowLayout: Binding loop detected for property "x"[0m[1;33m[0m
+[gazebo-5] [INFO] [1794073643.904522688] [gz_ros_control]: [gz_ros2_control] Fixed joint ['base_joint'] (Entity='32') is skipped.
+[gazebo-5] [INFO] [1794073643.908620489] [gz_ros_control]: Loading controller_manager
+[gazebo-5] [INFO] [1794073643.955554387] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-5] [WARN] [1794073643.955622834] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[gazebo-5] [INFO] [1794073643.979159025] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-5] [WARN] [1794073643.979317245] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-5] [INFO] [1794073644.080070701] [controller_manager]: Received robot description from topic.
+[gazebo-5] [INFO] [1794073644.080242468] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gazebo-5] [INFO] [1794073644.087179624] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-5] [INFO] [1794073644.087296193] [gz_ros_control]: Loading joint: shoulder_pan_joint
+[gazebo-5] [INFO] [1794073644.087303889] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1794073644.087310111] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087413096] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087428021] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087437201] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087440591] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087444884] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087448099] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1794073644.087450894] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087462075] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087466642] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087475714] [gz_ros_control]: Loading joint: shoulder_lift_joint
+[gazebo-5] [INFO] [1794073644.087478979] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1794073644.087484241] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087486926] [gz_ros_control]: 			 found initial value: -1.570000
+[gazebo-5] [INFO] [1794073644.087489801] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087492888] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087495440] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087497781] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087500444] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1794073644.087502582] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087506957] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087511072] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087517360] [gz_ros_control]: Loading joint: elbow_joint
+[gazebo-5] [INFO] [1794073644.087520642] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1794073644.087523121] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087525467] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087528076] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087530261] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087532826] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087535949] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087538495] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1794073644.087540655] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087544657] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087547793] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087554205] [gz_ros_control]: Loading joint: wrist_1_joint
+[gazebo-5] [INFO] [1794073644.087556982] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1794073644.087559337] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087561579] [gz_ros_control]: 			 found initial value: -1.570000
+[gazebo-5] [INFO] [1794073644.087564306] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087566433] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087568998] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087571242] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087573809] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1794073644.087576116] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087579918] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087615584] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087623364] [gz_ros_control]: Loading joint: wrist_2_joint
+[gazebo-5] [INFO] [1794073644.087626212] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1794073644.087628839] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087631315] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087634188] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087636598] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087639638] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087642076] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087645002] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1794073644.087647316] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087651361] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087654692] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087659777] [gz_ros_control]: Loading joint: wrist_3_joint
+[gazebo-5] [INFO] [1794073644.087662755] [gz_ros_control]: 	State:
+[gazebo-5] [INFO] [1794073644.087665211] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087667687] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087670520] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087674974] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087677976] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087680679] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-5] [INFO] [1794073644.087683435] [gz_ros_control]: 	Command:
+[gazebo-5] [INFO] [1794073644.087685937] [gz_ros_control]: 		 position
+[gazebo-5] [INFO] [1794073644.087690278] [gz_ros_control]: 		 velocity
+[gazebo-5] [INFO] [1794073644.087695263] [gz_ros_control]: 		 effort
+[gazebo-5] [INFO] [1794073644.087839739] [controller_manager]: Initialize hardware 'ur' 
+[gazebo-5] [WARN] [1794073644.087863233] [controller_manager.hardware_component.system.ur]: Executor is not available during hardware component initialization for 'ur'. Skipping node creation!
+[gazebo-5] [INFO] [1794073644.088395224] [controller_manager]: Successful initialization of hardware 'ur'
+[gazebo-5] [INFO] [1794073644.089343892] [controller_manager]: Activating component 'ur'.
+[gazebo-5] [INFO] [1794073644.089381985] [resource_manager]: 'configure' hardware 'ur' 
+[gazebo-5] [INFO] [1794073644.089389680] [gz_ros_control]: System Successfully configured!
+[gazebo-5] [INFO] [1794073644.089396530] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gazebo-5] [INFO] [1794073644.089407078] [resource_manager]: 'activate' hardware 'ur' 
+[gazebo-5] [INFO] [1794073644.089427066] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gazebo-5] [WARN] [1794073644.089515140] [controller_manager]: Component 'ur' does not have read or write statistics initialized, skipping registration.
+[gazebo-5] [INFO] [1794073644.089524718] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-5] [INFO] [1794073644.326593682] [controller_manager]: Loading controller : 'scaled_joint_trajectory_controller' of type 'ur_controllers/ScaledJointTrajectoryController'
+[gazebo-5] [INFO] [1794073644.326681415] [controller_manager]: Loading controller 'scaled_joint_trajectory_controller'
+[gazebo-5] [INFO] [1794073644.377052047] [controller_manager]: Controller 'scaled_joint_trajectory_controller' node arguments: --ros-args --params-file /opt/ros/jazzy/share/ur_simulation_gz/config/ur_controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[gazebo-5] [INFO] [1794073644.417955260] [scaled_joint_trajectory_controller]: No scaling interface set. This controller will not use speed scaling.
+[spawner-3] [INFO] [1794073644.457215748] [spawner_scaled_joint_trajectory_controller]: Loaded scaled_joint_trajectory_controller
+[gazebo-5] [INFO] [1794073644.462323899] [controller_manager]: Configuring controller: 'scaled_joint_trajectory_controller'
+[gazebo-5] [INFO] [1794073644.462934086] [scaled_joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-5] [INFO] [1794073644.462988946] [scaled_joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-5] [INFO] [1794073644.463045687] [scaled_joint_trajectory_controller]: Using 'splines' interpolation method.
+[gazebo-5] [INFO] [1794073644.490126364] [scaled_joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[gazebo-5] [INFO] [1794073644.507863369] [scaled_joint_trajectory_controller]: Setting initial scaling factor to 1.000000
+[gazebo-5] [INFO] [1794073644.507939228] [scaled_joint_trajectory_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[gazebo-5] [INFO] [1794073644.511695347] [controller_manager]: Activating controllers: [ scaled_joint_trajectory_controller ]
+[gazebo-5] [1;33m[GUI] [Wrn] [Ogre2RenderTarget.cc:668] [0m[1;33mAnti-aliasing level of '[0m[1;33m[0m[1;33m' [0m[1;33mis not supported; valid FSAA levels are: [0m[1;33m[ 0 ][0m[1;33m. Setting to 1[0m[1;33m[0m
+[move_group-8] Error:   Semantic description is not specified for the same robot as the URDF
+[move_group-8]          at line 681 in ./src/model.cpp
+[move_group-8] [INFO] [1794073644.906597293] [move_group.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
+[move_group-8] [INFO] [1794073644.906767914] [move_group.moveit.moveit.core.robot_model]: Loading robot model 'ur'...
+[move_group-8] [INFO] [1794073644.906801929] [move_group.moveit.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[move_group-8] [INFO] [1794073644.949162624] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'ur_manipulator': 1 1 1 1 1 1
+[move_group-8] [INFO] [1794073645.047226336] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-8] [INFO] [1794073645.047574676] [move_group.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-8] [INFO] [1794073645.049053067] [move_group.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-8] [INFO] [1794073645.050520497] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-8] [INFO] [1794073645.050581497] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[move_group-8] [INFO] [1794073645.050914493] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-8] [INFO] [1794073645.051697405] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-8] [INFO] [1794073645.051863571] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[move_group-8] [INFO] [1794073645.054011987] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-8] [INFO] [1794073645.054079927] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-8] [INFO] [1794073645.055193145] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-8] [INFO] [1794073645.057020879] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-8] [WARN] [1794073645.057618612] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-8] [ERROR] [1794073645.057696852] [move_group.moveit.moveit.ros.occupancy_map_monitor]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-8] [INFO] [1794073645.080601464] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-8] [INFO] [1794073645.099723314] [move_group.moveit.moveit.planners.pilz.command_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[move_group-8] [INFO] [1794073645.099846232] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[move_group-8] [INFO] [1794073645.106016505] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [CIRC]
+[move_group-8] [INFO] [1794073645.106179669] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[move_group-8] [INFO] [1794073645.109233958] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [LIN]
+[move_group-8] [INFO] [1794073645.109365517] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[move_group-8] [INFO] [1794073645.113064012] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [PTP]
+[move_group-8] [INFO] [1794073645.113189817] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'Pilz Industrial Motion Planner'
+[move_group-8] [INFO] [1794073645.114298114] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073645.118716242] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073645.118858719] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1794073645.120720750] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1794073645.120855419] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1794073645.120942759] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1794073645.120950085] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1794073645.120979446] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1794073645.122326215] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1794073645.145078495] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1794073645.145158804] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1794073645.146946192] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1794073645.193252107] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[move_group-8] [INFO] [1794073645.194506202] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073645.194844576] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073645.194895918] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1794073645.195927917] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1794073645.196007905] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1794073645.196063312] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1794073645.196069670] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1794073645.196085052] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1794073645.197193988] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1794073645.198491635] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1794073645.198577352] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1794073645.199351978] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1794073645.199406135] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1794073645.200245595] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1794073645.216514445] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'CHOMP'
+[move_group-8] [INFO] [1794073645.217900515] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073645.218228448] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073645.218245581] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1794073645.219684234] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1794073645.219764742] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1794073645.219831517] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1794073645.219837577] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1794073645.219878318] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1794073645.224832694] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1794073645.229321305] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1794073645.229579516] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1794073645.231375108] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1794073645.231432000] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1794073645.232834502] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1794073645.260699852] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'STOMP'
+[move_group-8] [INFO] [1794073645.262537609] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073645.262964319] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073645.263009211] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1794073645.263789291] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1794073645.263891188] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1794073645.263979763] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1794073645.263996940] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1794073645.264024694] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1794073645.265423275] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1794073645.267258645] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1794073645.267343780] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1794073645.268379259] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1794073645.268416405] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1794073645.269033119] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1794073645.465423962] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for scaled_joint_trajectory_controller
+[move_group-8] [INFO] [1794073645.472040465] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for joint_trajectory_controller
+[move_group-8] [INFO] [1794073645.472456670] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073645.472528941] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073645.474023041] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-8] [INFO] [1794073645.474093507] [move_group]: MoveGroup debug mode is ON
+[move_group-8] [INFO] [1794073645.563008930] [move_group.moveit.moveit.planners.pilz.move_group_sequence_action]: initialize move group sequence action
+[move_group-8] [INFO] [1794073645.573004436] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-8] [INFO] [1794073645.573557954] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-8] [INFO] [1794073645.578737271] [move_group.moveit.moveit.ros.move_group.executable]: 
+[move_group-8] 
+[move_group-8] ********************************************************
+[move_group-8] * MoveGroup using: 
+[move_group-8] *     - apply_planning_scene_service
+[move_group-8] *     - clear_octomap_service
+[move_group-8] *     - get_group_urdf
+[move_group-8] *     - load_geometry_from_file
+[move_group-8] *     - CartesianPathService
+[move_group-8] *     - execute_trajectory_action
+[move_group-8] *     - get_planning_scene_service
+[move_group-8] *     - kinematics_service
+[move_group-8] *     - move_action
+[move_group-8] *     - motion_plan_service
+[move_group-8] *     - query_planners_service
+[move_group-8] *     - state_validation_service
+[move_group-8] *     - save_geometry_to_file
+[move_group-8] *     - SequenceAction
+[move_group-8] *     - SequenceService
+[move_group-8] ********************************************************
+[move_group-8] 
+[move_group-8] [INFO] [1794073645.579105840] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
+[move_group-8] [INFO] [1794073645.579215108] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
+[move_group-8] [96mLoading 'move_group/ApplyPlanningSceneService'...[0m
+[move_group-8] [96mLoading 'move_group/ClearOctomapService'...[0m
+[move_group-8] [96mLoading 'move_group/GetUrdfService'...[0m
+[move_group-8] [96mLoading 'move_group/LoadGeometryFromFileService'...[0m
+[move_group-8] [96mLoading 'move_group/MoveGroupCartesianPathService'...[0m
+[move_group-8] [96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...[0m
+[move_group-8] [96mLoading 'move_group/MoveGroupGetPlanningSceneService'...[0m
+[move_group-8] [96mLoading 'move_group/MoveGroupKinematicsService'...[0m
+[move_group-8] [96mLoading 'move_group/MoveGroupMoveAction'...[0m
+[move_group-8] [96mLoading 'move_group/MoveGroupPlanService'...[0m
+[move_group-8] [96mLoading 'move_group/MoveGroupQueryPlannersService'...[0m
+[move_group-8] [96mLoading 'move_group/MoveGroupStateValidationService'...[0m
+[move_group-8] [96mLoading 'move_group/SaveGeometryToFileService'...[0m
+[move_group-8] [96mLoading 'pilz_industrial_motion_planner/MoveGroupSequenceAction'...[0m
+[move_group-8] [96mLoading 'pilz_industrial_motion_planner/MoveGroupSequenceService'...[0m
+[move_group-8] 
+[move_group-8] [92mYou can start planning now![0m
+[move_group-8] 
+[rviz2-9] [ERROR] [1794073645.907500167] [rviz2_moveit.moveit.ros.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-9] [INFO] [1794073645.964089845] [rviz2_moveit.moveit.ros.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[gazebo-5] [1;32m[GUI] [0m[1;32m[MsgMsg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/empty/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::UserCommands[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::SceneBroadcaster[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Contact[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/empty[0m[1;32m/control], [[0m[1;32m/world/empty[0m[1;32m/control/state] and [[0m[1;32m/world/empty[0m[1;32m/playback/control][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/empty[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mempty[0m[1;32m] initialized with [[0m[1;32m1ms[0m[1;32m] physics profile.[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/empty[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m3[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz_ros2_control::GazeboSimROS2ControlPlugin[0m[1;36m] for entity [[0m[1;36m10[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [UserCommands.cc:1093] [0m[1;36mCreated entity [[0m[1;36m10[0m[1;36m] named [[0m[1;36mur[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_link_inertia_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mshoulder_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mupper_arm_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [WARN] [1794073646.036312156] [gz_ros_control]:  Desired controller update period (0.002 s) is slower than the gazebo simulation period (0.001 s).
+[gazebo-5] [WARN] [1794073646.038097010] [controller_manager]: No clock received, using time argument instead! Check your node's clock configuration (use_sim_time parameter) and if a valid clock source is available
+[gazebo-5] [INFO] [1794073646.039821766] [controller_manager]: Successfully switched controllers!
+[spawner-3] [INFO] [1794073646.050747653] [spawner_scaled_joint_trajectory_controller]: Configured and activated scaled_joint_trajectory_controller
+[rviz2-9] [WARN] [1794073646.076172859] [rcl.logging_rosout]: Publisher already registered for node name: 'rviz2_moveit'. If this is due to multiple nodes with the same name then all logs for the logger named 'rviz2_moveit' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[rviz2-9] Error:   Semantic description is not specified for the same robot as the URDF
+[rviz2-9]          at line 681 in ./src/model.cpp
+[rviz2-9] [INFO] [1794073646.179050264] [rviz2_moveit.moveit.ros.rdf_loader]: Loaded robot model in 0.058 seconds
+[rviz2-9] [INFO] [1794073646.179418819] [rviz2_moveit.moveit.core.robot_model]: Loading robot model 'ur'...
+[rviz2-9] [INFO] [1794073646.179451365] [rviz2_moveit.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[rviz2-9] [INFO] [1794073646.221520930] [rviz2_moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'ur_manipulator': 1 1 1 1 1 1
+[rviz2-9] [INFO] [1794073646.343666540] [rviz2_moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-9] [INFO] [1794073646.345254563] [rviz2_moveit.moveit.ros.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[spawner-2] [INFO] [1794073646.401654280] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [spawner-3]: process has finished cleanly [pid 1096]
+[rviz2-9] [INFO] [1794073646.869748142] [interactive_marker_display_103326345066352]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-9] [INFO] [1794073646.894147427] [rviz2_moveit.moveit.ros.motion_planning_frame]: group ur_manipulator
+[rviz2-9] [INFO] [1794073646.894235487] [rviz2_moveit.moveit.ros.motion_planning_frame]: Constructing new MoveGroup connection for group 'ur_manipulator' in namespace ''
+[rviz2-9] [INFO] [1794073646.958060612] [rviz2_moveit.moveit.ros.move_group_interface]: Ready to take commands for planning group ur_manipulator.
+[rviz2-9] [INFO] [1794073647.087386175] [interactive_marker_display_103326345066352]: Sending request for interactive markers
+[rviz2-9] [INFO] [1794073647.173656094] [interactive_marker_display_103326345066352]: Service response received for initialization
+[gazebo-5] [INFO] [1794073647.661957009] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-5] [INFO] [1794073647.662077581] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-5] [INFO] [1794073647.675146236] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /opt/ros/jazzy/share/ur_simulation_gz/config/ur_controllers.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-2] [INFO] [1794073647.763221011] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[gazebo-5] [INFO] [1794073647.766501616] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gazebo-5] [INFO] [1794073647.766776872] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gazebo-5] [INFO] [1794073647.809413183] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[gazebo-5] [INFO] [1794073647.819642142] [controller_manager]: Successfully switched controllers!
+[spawner-2] [INFO] [1794073647.824765877] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[INFO] [spawner-2]: process has finished cleanly [pid 1095]
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mforearm_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mwrist_1_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mwrist_2_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:333] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-5] [1;36m[Dbg] [SDFFeatures.cc:865] [0m[1;36mThe geometry element of collision [[0m[1;36mwrist_3_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/empty[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/empty[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/empty[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/empty[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/empty/scene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/empty/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/empty/state[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/empty[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/empty[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m4[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [EntityComponentManager.cc:1710] [0m[1;36mUpdated state thread iterators: [0m[1;36m12[0m[1;36m threads processing around [0m[1;36m4[0m[1;36m entities each.[0m[1;36m[0m
+[INFO] [gz-10]: process started with pid [1560]
+[gz-10] data: true
+[gz-10] 
+[INFO] [gz-10]: process has finished cleanly [pid 1560]
+[gazebo-5] [1;36m[Dbg] [Sensors.cc:697] [0m[1;36mConfiguring Sensors system[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Sensors.cc:557] [0m[1;36mSensorsPrivate::Run[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Sensors[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Sensors.cc:532] [0m[1;36mSensorsPrivate::RenderThread started[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Sensors.cc:337] [0m[1;36mWaiting for init[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36mExiting postupdate worker thread ([Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36mExiting postupdate worker thread ([Dbg] [SimulationRunner.cc:654] [Dbg] [SimulationRunner.cc:654] [0m[1;36m[0m
+[gazebo-5] [1;36mExiting postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m5[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
+[INFO] [create-11]: process started with pid [1622]
+[INFO] [create-12]: process started with pid [1623]
+[INFO] [create-13]: process started with pid [1624]
+[create-12] [INFO] [1794073656.235065539] [ros_gz_sim]: Requesting list of world names.
+[create-13] [INFO] [1794073656.248740310] [ros_gz_sim]: Requesting list of world names.
+[create-11] [INFO] [1794073656.296838477] [ros_gz_sim]: Requesting list of world names.
+[create-12] [INFO] [1794073655.929106428] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-12]: process has finished cleanly [pid 1623]
+[create-11] [INFO] [1794073656.116738264] [ros_gz_sim]: Entity creation successful.
+[create-13] [INFO] [1794073656.127752432] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-11]: process has finished cleanly [pid 1622]
+[INFO] [create-13]: process has finished cleanly [pid 1624]
+[gazebo-5] [1;36m[Dbg] [UserCommands.cc:1093] [0m[1;36mCreated entity [[0m[1;36m39[0m[1;36m] named [[0m[1;36mred_cube[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [UserCommands.cc:1093] [0m[1;36mCreated entity [[0m[1;36m43[0m[1;36m] named [[0m[1;36mtable[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [UserCommands.cc:1093] [0m[1;36mCreated entity [[0m[1;36m47[0m[1;36m] named [[0m[1;36mgreen_cube[0m[1;36m][0m[1;36m[0m
+[INFO] [create-14]: process started with pid [1777]
+[INFO] [parameter_bridge-15]: process started with pid [1778]
+[create-14] [INFO] [1794073660.534676440] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-15] [INFO] [1794073660.561986109] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image (gz.msgs.Image) -> /camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-15] [INFO] [1794073660.570522743] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (gz.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-15] [INFO] [1794073660.572448093] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[create-14] [INFO] [1794073660.738555562] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-14]: process has finished cleanly [pid 1777]
+[gazebo-5] [1;36m[Dbg] [UserCommands.cc:1093] [0m[1;36mCreated entity [[0m[1;36m51[0m[1;36m] named [[0m[1;36moverhead_camera[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Sensors.cc:349] [0m[1;36mInitializing render context[0m[1;36m[0m
+[gazebo-5] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre2[0m[1;32m][0m[1;32m[0m
+[gazebo-5] [1;36m[Dbg] [RenderUtil.cc:2646] [0m[1;36mCreate scene [[0m[1;36mscene[0m[1;36m][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Sensors.cc:391] [0m[1;36mRendering Thread initialized[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [RgbdCameraSensor.cc:210] [0m[1;36mRGB images for [[0m[1;36moverhead_camera::link::rgbd[0m[1;36m] advertised on [[0m[1;36mcamera[0m[1;36m/image][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [RgbdCameraSensor.cc:224] [0m[1;36mDepth images for [[0m[1;36moverhead_camera::link::rgbd[0m[1;36m] advertised on [[0m[1;36mcamera[0m[1;36m/depth_image][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [RgbdCameraSensor.cc:238] [0m[1;36mPoints for [[0m[1;36moverhead_camera::link::rgbd[0m[1;36m] advertised on [[0m[1;36mcamera[0m[1;36m/points][0m[1;36m[0m
+[gazebo-5] [1;36m[Dbg] [CameraSensor.cc:695] [0m[1;36mCamera info for [[0m[1;36moverhead_camera::link::rgbd[0m[1;36m] advertised on [[0m[1;36mcamera/camera_info[0m[1;36m][0m[1;36m[0m
+[move_group-8] [INFO] [1794073682.118917261] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-8] [INFO] [1794073682.120279928] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-8] [INFO] [1794073682.120652699] [move_group.moveit.moveit.ros.move_group.move_action]: Combined planning and execution request received for MoveGroup action. Forwarding to planning and execution pipeline.
+[move_group-8] [WARN] [1794073682.120782507] [move_group.moveit.moveit.ros.move_group.capability]: Execution of motions should always start at the robot's current state. Ignoring the state supplied as start state in the motion planning request
+[move_group-8] [WARN] [1794073682.120830645] [move_group.moveit.moveit.ros.move_group.capability]: Execution of motions should always start at the robot's current state. Ignoring the state supplied as difference in the planning scene diff
+[move_group-8] [INFO] [1794073682.120892880] [move_group.moveit.moveit.ros.plan_execution]: Planning attempt 1 of at most 1
+[move_group-8] [INFO] [1794073682.122405489] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073682.122802672] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-8] [WARN] [1794073682.123050057] [move_group.moveit.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[move_group-8] [INFO] [1794073682.123346901] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-8] [INFO] [1794073682.123492174] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-8] [INFO] [1794073682.133362995] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'ur_manipulator' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-8] [INFO] [1794073682.134089149] [move_group]: Calling Planner 'OMPL'
+[move_group-8] [ERROR] [1794073692.134888399] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Unable to solve the planning problem
+[move_group-8] [ERROR] [1794073692.135110296] [move_group]: Planner 'OMPL' failed with error code FAILURE
+[move_group-8] [INFO] [1794073692.135224188] [move_group.moveit.moveit.ros.move_group.move_action]: FAILURE
+[move_group-8] [INFO] [1794073819.769279084] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-8] [INFO] [1794073819.769807994] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-8] [INFO] [1794073819.772899347] [move_group.moveit.moveit.ros.move_group.move_action]: Combined planning and execution request received for MoveGroup action. Forwarding to planning and execution pipeline.
+[move_group-8] [WARN] [1794073819.773123192] [move_group.moveit.moveit.ros.move_group.capability]: Execution of motions should always start at the robot's current state. Ignoring the state supplied as start state in the motion planning request
+[move_group-8] [WARN] [1794073819.773184726] [move_group.moveit.moveit.ros.move_group.capability]: Execution of motions should always start at the robot's current state. Ignoring the state supplied as difference in the planning scene diff
+[move_group-8] [INFO] [1794073819.773216969] [move_group.moveit.moveit.ros.plan_execution]: Planning attempt 1 of at most 1
+[move_group-8] [INFO] [1794073819.773522220] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073819.773595876] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-8] [WARN] [1794073819.773606362] [move_group.moveit.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[move_group-8] [INFO] [1794073819.773656915] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-8] [INFO] [1794073819.773696604] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-8] [INFO] [1794073819.774716107] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'ur_manipulator' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-8] [INFO] [1794073819.774997365] [move_group]: Calling Planner 'OMPL'
+[move_group-8] [INFO] [1794073819.833028170] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1794073819.871275081] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-8] [INFO] [1794073819.878195065] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-8] [WARN] [1794073819.878717397] [move_group.moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-8] [INFO] [1794073819.879175399] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073819.879252581] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073819.879593166] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-8] [INFO] [1794073819.881922698] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-8] [INFO] [1794073819.882083345] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073819.882173895] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073819.883454947] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[gazebo-5] [INFO] [1794073819.886059494] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1794073819.886302605] [scaled_joint_trajectory_controller]: Accepted new action goal
+[move_group-8] [INFO] [1794073819.889906491] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[move_group-8] [INFO] [1794073819.889996654] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gazebo-5] [INFO] [1794073847.345975044] [scaled_joint_trajectory_controller]: Goal reached, success!
+[move_group-8] [INFO] [1794073847.376531767] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
+[move_group-8] [INFO] [1794073847.380600866] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-8] [INFO] [1794073847.388987239] [move_group.moveit.moveit.ros.move_group.move_action]: Solution was found and executed.
+[move_group-8] [INFO] [1794073849.061620794] [move_group.moveit.moveit.ros.move_group.move_action]: MoveGroupMoveAction: Received request
+[move_group-8] [INFO] [1794073849.062143195] [move_group.moveit.moveit.ros.move_group.move_action]: executing..
+[move_group-8] [INFO] [1794073849.064581115] [move_group.moveit.moveit.ros.move_group.move_action]: Combined planning and execution request received for MoveGroup action. Forwarding to planning and execution pipeline.
+[move_group-8] [WARN] [1794073849.064764372] [move_group.moveit.moveit.ros.move_group.capability]: Execution of motions should always start at the robot's current state. Ignoring the state supplied as start state in the motion planning request
+[move_group-8] [WARN] [1794073849.064874357] [move_group.moveit.moveit.ros.move_group.capability]: Execution of motions should always start at the robot's current state. Ignoring the state supplied as difference in the planning scene diff
+[move_group-8] [INFO] [1794073849.064908853] [move_group.moveit.moveit.ros.plan_execution]: Planning attempt 1 of at most 1
+[move_group-8] [INFO] [1794073849.065198543] [move_group]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[move_group-8] [INFO] [1794073849.065355410] [move_group]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[move_group-8] [WARN] [1794073849.065377479] [move_group.moveit.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[move_group-8] [INFO] [1794073849.065421816] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[move_group-8] [INFO] [1794073849.065460624] [move_group]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[move_group-8] [INFO] [1794073849.066535897] [move_group.moveit.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'ur_manipulator' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-8] [INFO] [1794073849.066708823] [move_group]: Calling Planner 'OMPL'
+[move_group-8] [INFO] [1794073849.113060903] [move_group]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1794073849.114217009] [move_group]: Calling PlanningResponseAdapter 'ValidateSolution'
+[move_group-8] [INFO] [1794073849.114679522] [move_group]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[move_group-8] [WARN] [1794073849.114887370] [move_group.moveit.moveit.ros.planning_pipeline]: The planner plugin did not fill out the 'planner_id' field of the MotionPlanResponse. Setting it to the planner ID name of the MotionPlanRequest assuming that the planner plugin does warn you if it does not use the requested planner.
+[move_group-8] [INFO] [1794073849.115174697] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073849.115233553] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073849.115401846] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-8] [INFO] [1794073849.116237720] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-8] [INFO] [1794073849.116435958] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073849.116501974] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 2 controllers in list
+[move_group-8] [INFO] [1794073849.116695072] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[gazebo-5] [INFO] [1794073849.117066099] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-5] [INFO] [1794073849.117188394] [scaled_joint_trajectory_controller]: Accepted new action goal
+[move_group-8] [INFO] [1794073849.117524868] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[move_group-8] [INFO] [1794073849.117547618] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gazebo-5] [INFO] [1794073851.792525061] [scaled_joint_trajectory_controller]: Goal reached, success!
+[move_group-8] [INFO] [1794073851.818193268] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
+[move_group-8] [INFO] [1794073851.818352124] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-8] [INFO] [1794073851.825880423] [move_group.moveit.moveit.ros.move_group.move_action]: Solution was found and executed.

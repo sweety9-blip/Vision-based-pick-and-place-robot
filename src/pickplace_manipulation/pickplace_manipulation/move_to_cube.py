@@ -28,7 +28,7 @@ class MoveToCube(Node):
         req = goal.request
         req.group_name = 'ur_manipulator'
         req.num_planning_attempts = 5
-        req.allowed_planning_time = 10.0
+        req.allowed_planning_time = 30.0
         req.max_velocity_scaling_factor = 0.2
         req.max_acceleration_scaling_factor = 0.2
 
@@ -50,8 +50,8 @@ class MoveToCube(Node):
         oc.link_name = LINK
         oc.orientation.x = 1.0              # tool z-axis pointing straight down
         oc.orientation.w = 0.0
-        oc.absolute_x_axis_tolerance = 0.1
-        oc.absolute_y_axis_tolerance = 0.1
+        oc.absolute_x_axis_tolerance = 0.25
+        oc.absolute_y_axis_tolerance = 0.25
         oc.absolute_z_axis_tolerance = 3.14  # any rotation around the vertical
         oc.weight = 1.0
 
