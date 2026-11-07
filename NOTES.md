@@ -4,3 +4,5 @@
 - Step 3b: pixel_to_world.py converts pixel + depth to world x,y,z using a fixed camera pose (0.55, 0, 1.0, looking down). Mapping: image-right = world -y, image-down = world -x. Verified within 3 mm on frame.png.
 - Step 4b: pick_descend.py hovers, waits for the arm to settle (tf, 3 samples within 1 mm), descends to 5 cm above the cube top and corrects from the tf pose. Run: ros2 run pickplace_manipulation pick_descend red 0.15 0.05. If MoveIt returns 99999, restart the whole simulation (stale state) and retry.
 - Step 4b verified: hover within ~7 mm, descent to 5 cm above cube within 0.7 mm. MoveIt 99999 was an OMPL planning timeout (10 s), not stale state. Fix: allowed_planning_time 30 s, tilt tolerance 0.25 rad. First plan took ~28 s.
+- Gripper: DetachableJoint loaded once per session via gz service (entity id 10, parent wrist_3_link, child red_cube/link). Then /model/ur/detachable_joint/attach and /detach (gz.msgs.Empty) re-weld and release. Verified: carried z=0.286, release z=0.035, re-attach lift z=0.289.
+- The overhead camera cannot see a cube while the arm is above it, so detect once before moving and reuse the stored position.
