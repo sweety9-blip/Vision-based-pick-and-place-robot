@@ -3,3 +3,4 @@
 - Step 3a: pickplace_perception package. color_detector.py finds red and green cubes by HSV thresholding. Test offline: python3 src/pickplace_perception/pickplace_perception/color_detector.py frame.png
 - Step 3b: pixel_to_world.py converts pixel + depth to world x,y,z using a fixed camera pose (0.55, 0, 1.0, looking down). Mapping: image-right = world -y, image-down = world -x. Verified within 3 mm on frame.png.
 - Step 4b: pick_descend.py hovers, waits for the arm to settle (tf, 3 samples within 1 mm), descends to 5 cm above the cube top and corrects from the tf pose. Run: ros2 run pickplace_manipulation pick_descend red 0.15 0.05. If MoveIt returns 99999, restart the whole simulation (stale state) and retry.
+- Step 4b verified: hover within ~7 mm, descent to 5 cm above cube within 0.7 mm. MoveIt 99999 was an OMPL planning timeout (10 s), not stale state. Fix: allowed_planning_time 30 s, tilt tolerance 0.25 rad. First plan took ~28 s.
