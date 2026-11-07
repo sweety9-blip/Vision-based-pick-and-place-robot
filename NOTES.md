@@ -2,3 +2,4 @@
 - Step 2 done: table, cubes, overhead RGB-D camera. Sensors system is loaded by scene.launch.py via gz service (needed because ur_sim_moveit uses an empty world). CPU rendering (llvmpipe) so camera runs slowly.
 - Step 3a: pickplace_perception package. color_detector.py finds red and green cubes by HSV thresholding. Test offline: python3 src/pickplace_perception/pickplace_perception/color_detector.py frame.png
 - Step 3b: pixel_to_world.py converts pixel + depth to world x,y,z using a fixed camera pose (0.55, 0, 1.0, looking down). Mapping: image-right = world -y, image-down = world -x. Verified within 3 mm on frame.png.
+- Step 4b: pick_descend.py hovers, waits for the arm to settle (tf, 3 samples within 1 mm), descends to 5 cm above the cube top and corrects from the tf pose. Run: ros2 run pickplace_manipulation pick_descend red 0.15 0.05. If MoveIt returns 99999, restart the whole simulation (stale state) and retry.
