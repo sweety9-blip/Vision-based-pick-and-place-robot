@@ -57,6 +57,20 @@ def cube_position(model):
         vals[axis] = float(m.group(1)) if m else 0.0
     return (vals['x'], vals['y'], vals['z'])
 
+def release(model, log, tries=3):
+    """Send detach, then wait for the cube to drop. Returns True if it landed."""
+    for n in range(tries):
+        publish_empty(DETACH)
+        log.info('detach message sent (%d of %d)' % (n + 1, tries))
+        end = time.time() + 8.0
+        while time.time() < end:
+            time.sleep(1.0)
+            c = cube_position(model)
+            if c is not None and c[2] < 0.06:
+                log.info('release OK, cube z = %.3f' % c[2])
+                return True
+    log.error('RELEASE FAILED: cube still in the air')
+    return False
 
 class PickPlace(PickDescend):
     def go(self, x, y, z, tol, tries=3):
@@ -158,10 +172,10 @@ def main():
         return
 
     # 6. release and retreat
-    publish_empty(DETACH)
-    log.info('detach message sent')
-    time.sleep(2.0)
-    node.go_settled(px, py, t.z + lift, 0.01)
+        if not release(model, log):
+        log.error('stopping without retreat so the cube is not lifted again')
+        return
+     node.go_settled(px, py, t.z + lift, 0.01)
 
     # 7. report
     c = cube_position(model)
