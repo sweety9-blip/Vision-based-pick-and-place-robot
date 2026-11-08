@@ -48,6 +48,7 @@ def generate_launch_description():
     t_sensors = TimerAction(period=10.0, actions=[load_sensors])
     t_objects = TimerAction(period=15.0, actions=[
         spawn('table', my_share, 0.25, 0.0, 0.005),
+         spawn('decor', my_share, 0.0, 0.0, 0.0),
         spawn('red_cube', my_share, 0.5, 0.1, 0.04),
         spawn('green_cube', my_share, 0.55, -0.1, 0.04)])
     t_camera = TimerAction(period=20.0, actions=[
