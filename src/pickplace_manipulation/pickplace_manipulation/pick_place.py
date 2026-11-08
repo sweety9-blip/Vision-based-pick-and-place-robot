@@ -171,9 +171,9 @@ def main():
         log.error('lowering failed')
         return
 
-    # 6. release and retreat
-        if not release(model, log):
-            log.error('stopping without retreat so the cube is not lifted again')
+ # 6. release and retreat
+    if not release(model, log):
+        log.error('stopping without retreat so the cube is not lifted again')
         return
     node.go_settled(px, py, t.z + lift, 0.01)
 
