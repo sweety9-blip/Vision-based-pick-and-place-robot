@@ -172,10 +172,10 @@ def main():
         return
 
     # 6. release and retreat
-    if not release(model, log):
-        log.error('stopping without retreat so the cube is not lifted again')
+        if not release(model, log):
+            log.error('stopping without retreat so the cube is not lifted again')
         return
-     node.go_settled(px, py, t.z + lift, 0.01)
+    node.go_settled(px, py, t.z + lift, 0.01)
 
     # 7. report
     c = cube_position(model)
