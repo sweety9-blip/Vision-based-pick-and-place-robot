@@ -86,8 +86,8 @@ class PickDescend(Node):
         oc.link_name = LINK
         oc.orientation.x = 1.0
         oc.orientation.w = 0.0
-        oc.absolute_x_axis_tolerance = 0.25
-        oc.absolute_y_axis_tolerance = 0.25
+        oc.absolute_x_axis_tolerance = 0.05
+        oc.absolute_y_axis_tolerance = 0.05
         oc.absolute_z_axis_tolerance = 3.14
         oc.weight = 1.0
 

@@ -57,18 +57,24 @@ def cube_position(model):
         vals[axis] = float(m.group(1)) if m else 0.0
     return (vals['x'], vals['y'], vals['z'])
 
-def release(model, log, tries=3):
-    """Send detach, then wait for the cube to drop. Returns True if it landed."""
+def release(model, log, tries=4):
+    """Send detach several times, then wait until the cube rests on the table."""
     for n in range(tries):
-        publish_empty(DETACH)
-        log.info('detach message sent (%d of %d)' % (n + 1, tries))
+        for _ in range(3):
+            publish_empty(DETACH)
+            time.sleep(0.5)
+        log.info('detach messages sent (%d of %d)' % (n + 1, tries))
         end = time.time() + 8.0
+        last = None
         while time.time() < end:
             time.sleep(1.0)
             c = cube_position(model)
-            if c is not None and c[2] < 0.06:
+            if c is None:
+                continue
+            if c[2] < 0.040 and last is not None and abs(c[2] - last) < 0.001:
                 log.info('release OK, cube z = %.3f' % c[2])
                 return True
+            last = c[2]
     log.error('RELEASE FAILED: cube still in the air')
     return False
 
@@ -135,7 +141,7 @@ def main():
     t0 = time.time()
 
     # 2. hover, then descend
-    if node.go_settled(t.x, t.y, t.z + hover, 0.01) is None:
+    if node.go_settled(t.x, t.y, t.z + hover, 0.02) is None:
         log.error('hover failed')
         return
     if node.descend((t.x, t.y, t.z + approach)) is None:
@@ -144,8 +150,10 @@ def main():
 
     # 3. grasp (plugin load the first time, attach message afterwards)
     if topic_exists(ATTACH):
-        publish_empty(ATTACH)
-        log.info('attach message sent')
+        for _ in range(3):
+            publish_empty(ATTACH)
+            time.sleep(0.5)
+        log.info('attach messages sent')
     elif load_plugin(model):
         log.info('gripper plugin loaded (cube welded)')
     else:
@@ -163,11 +171,25 @@ def main():
         return
     log.info('grasp OK, cube z = %.3f' % c[2])
 
-    # 5. carry to the place point and lower
-    if node.go_settled(px, py, t.z + lift, 0.01) is None:
-        log.error('carry failed')
-        return
-    if node.descend((px, py, t.z + approach + 0.01)) is None:
+    # 5. carry above the place point, then correct using the cube's real position
+    hang = 0.075                  # tool height above the cube centre when held
+    z_corr = 0.035 + 0.04 + hang  # cube bottom about 4.5 cm above the table
+    tx, ty = px, py
+    for attempt in range(4):
+        if node.go_settled(tx, ty, z_corr, 0.005) is None:
+            log.error('carry failed')
+            return
+        c = cube_position(model)
+        if c is None:
+            log.error('cannot read cube position')
+            return
+        ex, ey = px - c[0], py - c[1]
+        d = math.hypot(ex, ey)
+        log.info('place correction %d: cube %.1f mm from target' % (attempt + 1, d * 1000))
+        if d < 0.006:
+            break
+        tx, ty = tx + ex, ty + ey
+    if node.go_settled(tx, ty, 0.035 + hang + 0.005, 0.005) is None:
         log.error('lowering failed')
         return
 

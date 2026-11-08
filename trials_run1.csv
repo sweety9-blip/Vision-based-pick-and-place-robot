@@ -1,0 +1,6 @@
+trial,seed,cube_x,cube_y,result,place_err_mm,final_z,cycle_s,move_retries
+1,101,0.566,0.058,ERROR,,,,3
+2,102,0.427,0.185,FAILED,38.9,0.035,55,0
+3,103,0.693,0.137,SUCCESS,28.2,0.035,148,1
+4,104,0.687,0.262,FAILED,31.6,0.290,46,0
+5,105,0.661,0.105,GRASP_FAILED,,,,1

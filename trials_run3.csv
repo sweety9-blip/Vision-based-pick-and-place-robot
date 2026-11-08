@@ -1,0 +1,6 @@
+trial,seed,cube_x,cube_y,result,place_err_mm,final_z,cycle_s,move_retries
+1,301,0.508,0.24,FAILED,33.0,0.035,99,0
+2,302,0.689,0.162,SUCCESS,5.5,0.035,128,0
+3,303,0.39,0.291,SUCCESS,13.5,0.035,77,0
+4,304,0.423,0.128,SUCCESS,17.9,0.035,91,0
+5,305,0.438,0.17,FAILED,31.7,0.035,89,0

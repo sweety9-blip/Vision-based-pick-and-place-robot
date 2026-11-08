@@ -26,6 +26,7 @@ setup(
         'console_scripts': [   'move_to_cube = pickplace_manipulation.move_to_cube:main',
         'pick_descend = pickplace_manipulation.pick_descend:main',            'pick_place = pickplace_manipulation.pick_place:main',
                     'random_cube = pickplace_manipulation.random_cube:main',
+                                'run_trials = pickplace_manipulation.run_trials:main',
         ],
     },
 )
