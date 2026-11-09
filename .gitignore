@@ -6,3 +6,6 @@ __pycache__/
 launch.log
 frame.png
 detected.png
+dataset/
+dataset_backup.tar.gz
+check.png
