@@ -1,0 +1,16 @@
+[INFO] [1794218594.954756297] [pick_descend]: waiting for /detected/red (60 s max) ...
+[INFO] [1794218594.969346337] [pick_descend]: cube at (0.446, 0.109, 0.060), place point (0.50, -0.25)
+[INFO] [1794218618.217342836] [pick_descend]: MoveIt error code = 1
+[INFO] [1794218628.405409866] [pick_descend]: MoveIt error code = 1
+[INFO] [1794218630.002020463] [pick_descend]: descent attempt 1: error 1.9 mm
+[INFO] [1794218632.702857442] [pick_descend]: gripper plugin loaded (cube welded)
+[INFO] [1794218637.167614407] [pick_descend]: MoveIt error code = 1
+[INFO] [1794218639.034640505] [pick_descend]: grasp OK, cube z = 0.282
+[INFO] [1794218664.122685176] [pick_descend]: MoveIt error code = 1
+[INFO] [1794218666.011267974] [pick_descend]: place correction 1: cube 4.6 mm from target
+[INFO] [1794218700.462091425] [pick_descend]: MoveIt error code = 1
+[INFO] [1794218706.632773524] [pick_descend]: detach messages sent (1 of 4)
+[INFO] [1794218709.008929452] [pick_descend]: release OK, cube z = 0.035
+[INFO] [1794218712.122767367] [pick_descend]: MoveIt error code = 1
+[INFO] [1794218713.880271570] [pick_descend]: final cube (0.502, -0.255, 0.035), place error 5.2 mm, SUCCESS
+[INFO] [1794218713.881488430] [pick_descend]: cycle time 116 s

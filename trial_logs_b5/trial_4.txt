@@ -1,0 +1,22 @@
+[INFO] [1794218902.751371620] [pick_descend]: waiting for /detected/red (60 s max) ...
+[INFO] [1794218902.759912671] [pick_descend]: cube at (0.503, 0.116, 0.060), place point (0.50, -0.25)
+[INFO] [1794218925.605125152] [pick_descend]: MoveIt error code = 1
+[INFO] [1794218936.914348227] [pick_descend]: MoveIt error code = 1
+[INFO] [1794218938.588049476] [pick_descend]: descent attempt 1: error 1.9 mm
+[INFO] [1794218945.241376058] [pick_descend]: attach messages sent
+[INFO] [1794218999.542965192] [pick_descend]: MoveIt error code = 1
+[INFO] [1794219001.307440665] [pick_descend]: grasp OK, cube z = 0.290
+[INFO] [1794219012.296244825] [pick_descend]: MoveIt error code = 1
+[INFO] [1794219014.028491418] [pick_descend]: place correction 1: cube 11.6 mm from target
+[INFO] [1794219015.768852131] [pick_descend]: MoveIt error code = 1
+[INFO] [1794219017.606704081] [pick_descend]: place correction 2: cube 8.1 mm from target
+[INFO] [1794219023.498641268] [pick_descend]: MoveIt error code = 1
+[INFO] [1794219025.371385066] [pick_descend]: place correction 3: cube 16.7 mm from target
+[INFO] [1794219028.492114313] [pick_descend]: MoveIt error code = 1
+[INFO] [1794219030.264309673] [pick_descend]: place correction 4: cube 9.0 mm from target
+[INFO] [1794219031.511505163] [pick_descend]: MoveIt error code = 1
+[INFO] [1794219037.621922332] [pick_descend]: detach messages sent (1 of 4)
+[INFO] [1794219040.018804083] [pick_descend]: release OK, cube z = 0.035
+[INFO] [1794219047.087054854] [pick_descend]: MoveIt error code = 1
+[INFO] [1794219048.837753874] [pick_descend]: final cube (0.510, -0.244, 0.035), place error 11.6 mm, SUCCESS
+[INFO] [1794219048.838452756] [pick_descend]: cycle time 146 s
