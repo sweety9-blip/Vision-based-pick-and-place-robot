@@ -2,10 +2,10 @@
 
 A simulated UR5e arm finds a coloured cube with an overhead RGB-D camera, converts the detection into a 3D position, plans a motion with MoveIt 2, and picks and places the cube. Perception can run with either a classical HSV colour detector or a YOLOv8n model, and both are evaluated.
 
-**Demo video:** TODO (add link or `docs/demo.mp4`)
-
-![Scene] <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/123e5436-07c6-41fa-98a8-fd92ce266104" />
-
+<img width="507" height="305" alt="image" src="https://github.com/user-attachments/assets/2136b5d8-f8da-4d67-9266-3758f55e66c5" />
+ <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/8c7f4818-6fa7-4dfc-be6d-a82903dacc08" />
+<img width="289" height="179" alt="image" src="https://github.com/user-attachments/assets/832e8a68-8ce0-4b2a-b72c-f1d2a9430301" />
+<img width="615" height="381" alt="image" src="https://github.com/user-attachments/assets/92854cdd-fa06-4834-9356-707cda513085" />
 
 ## Pipeline
 
@@ -28,8 +28,7 @@ Gazebo overhead RGB-D camera
 
 ## Results
 
-All trials: red cube placed at random positions (x 0.39 to 0.69 m, y 0.02 to 0.30 m) and moved to a fixed target. **Success = cube resting on the table within 30 mm of the target.** This threshold was chosen by the author.
-
+All trials: red cube placed at random positions (x 0.39 to 0.69 m, y 0.02 to 0.30 m) and moved to a fixed target. **Success = cube resting on the table within 30 mm of the target.** 
 | Metric | Colour detector | YOLOv8n |
 |---|---|---|
 | Trials | 30 | 10 |
@@ -43,6 +42,11 @@ All trials: red cube placed at random positions (x 0.39 to 0.69 m, y 0.02 to 0.3
 
 With these sample sizes the two detectors perform comparably. 30/30 and 10/10 support a true success rate of roughly above 90% and above 75% respectively, not exactly 100%.
 
+<img width="535" height="251" alt="trails_table2" src="https://github.com/user-attachments/assets/fbed5e5d-eaab-48d4-84cf-10dc7f6a81b4" /> <img width="535" height="251" alt="trails_table2" src="https://github.com/user-attachments/assets/b981da21-c7c8-4033-b116-113d45443e58" />
+
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/e15012d3-b363-4cef-8f4e-964328697654" />
+
+
 ### YOLOv8n training
 
 - Dataset: 153 images (124 train, 29 val), both cubes at random positions and rotations, captured from the simulated camera.
@@ -52,6 +56,10 @@ With these sample sizes the two detectors perform comparably. 30/30 and 10/10 su
 - Offline on the 29 val images: both detectors found both cubes in 29/29; mean centre difference 0.69 px (max 1.19 px).
 - Live check at 3 random positions against the true cube position: error 0.2 to 6.4 mm.
 - Exported to ONNX and run with onnxruntime, because the system OpenCV (4.6) cannot parse the YOLOv8 ONNX graph.
+
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/fe91994f-4e8b-4f7e-a72e-ce115bcd8261" />
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/ee6e8180-24cf-4207-b716-9232cea7dd18" />
+
 
 ## Limitations
 
@@ -94,9 +102,8 @@ ros2 run pickplace_manipulation pick_place red
 # Evaluation: N trials with start seed S, results in trials.csv
 ros2 run pickplace_manipulation run_trials 5 1000
 
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/918a8885-57b0-4914-a318-45253d3ccf7c" />
-
 ```
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/918a8885-57b0-4914-a318-45253d3ccf7c" />
 
 ### Train YOLO (separate environment, simulation closed)
 
