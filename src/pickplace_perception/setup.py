@@ -26,6 +26,8 @@ setup(
         'console_scripts': [
             'object_detector = pickplace_perception.object_detector:main',
                         'collect_dataset = pickplace_perception.collect_dataset:main',
+                                    'yolo_detector = pickplace_perception.yolo_detector:main',
+            'compare_offline = pickplace_perception.compare_offline:main',
         ],
     },
 )
