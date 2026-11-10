@@ -44,7 +44,7 @@ With these sample sizes the two detectors perform comparably. 30/30 and 10/10 su
 
 <img width="535" height="251" alt="trails_table2" src="https://github.com/user-attachments/assets/fbed5e5d-eaab-48d4-84cf-10dc7f6a81b4" /> <img width="535" height="251" alt="trails_table2" src="https://github.com/user-attachments/assets/b981da21-c7c8-4033-b116-113d45443e58" />
 
-<img width="535" height="251" alt="image" src="https://github.com/user-attachments/assets/e15012d3-b363-4cef-8f4e-964328697654" />
+
 
 
 ### YOLOv8n training
