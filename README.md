@@ -42,7 +42,8 @@ All trials: red cube placed at random positions (x 0.39 to 0.69 m, y 0.02 to 0.3
 
 With these sample sizes the two detectors perform comparably. 30/30 and 10/10 support a true success rate of roughly above 90% and above 75% respectively, not exactly 100%.
 
-<img width="535" height="251" alt="trails_table2" src="https://github.com/user-attachments/assets/fbed5e5d-eaab-48d4-84cf-10dc7f6a81b4" />
+<img width="535" height="251" alt="trails_table2" src="https://github.com/user-attachments/assets/fbed5e5d-eaab-48d4-84cf-10dc7f6a81b4" /> 
+
 
 
 
