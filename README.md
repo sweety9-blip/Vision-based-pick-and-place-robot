@@ -47,7 +47,6 @@ With these sample sizes the two detectors perform comparably. 30/30 and 10/10 su
 
 
 
-
 ### YOLOv8n training
 
 - Dataset: 153 images (124 train, 29 val), both cubes at random positions and rotations, captured from the simulated camera.
