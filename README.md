@@ -3,7 +3,7 @@
 A simulated UR5e arm finds a coloured cube with an overhead RGB-D camera, converts the detection into a 3D position, plans a motion with MoveIt 2, and picks and places the cube. Perception can run with either a classical HSV colour detector or a YOLOv8n model, and both are evaluated.
 
 <img width="507" height="305" alt="image" src="https://github.com/user-attachments/assets/2136b5d8-f8da-4d67-9266-3758f55e66c5" />
- <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/8c7f4818-6fa7-4dfc-be6d-a82903dacc08" />
+ 
 <img width="289" height="179" alt="image" src="https://github.com/user-attachments/assets/832e8a68-8ce0-4b2a-b72c-f1d2a9430301" />
 <img width="615" height="381" alt="image" src="https://github.com/user-attachments/assets/92854cdd-fa06-4834-9356-707cda513085" />
 
@@ -44,7 +44,7 @@ With these sample sizes the two detectors perform comparably. 30/30 and 10/10 su
 
 <img width="535" height="251" alt="trails_table2" src="https://github.com/user-attachments/assets/fbed5e5d-eaab-48d4-84cf-10dc7f6a81b4" /> <img width="535" height="251" alt="trails_table2" src="https://github.com/user-attachments/assets/b981da21-c7c8-4033-b116-113d45443e58" />
 
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/e15012d3-b363-4cef-8f4e-964328697654" />
+<img width="535" height="251" alt="image" src="https://github.com/user-attachments/assets/e15012d3-b363-4cef-8f4e-964328697654" />
 
 
 ### YOLOv8n training
@@ -57,8 +57,8 @@ With these sample sizes the two detectors perform comparably. 30/30 and 10/10 su
 - Live check at 3 random positions against the true cube position: error 0.2 to 6.4 mm.
 - Exported to ONNX and run with onnxruntime, because the system OpenCV (4.6) cannot parse the YOLOv8 ONNX graph.
 
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/fe91994f-4e8b-4f7e-a72e-ce115bcd8261" />
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/ee6e8180-24cf-4207-b716-9232cea7dd18" />
+<img width="540" height="255" alt="image" src="https://github.com/user-attachments/assets/fe91994f-4e8b-4f7e-a72e-ce115bcd8261" />
+<img width="540" height="255" alt="image" src="https://github.com/user-attachments/assets/ee6e8180-24cf-4207-b716-9232cea7dd18" />
 
 
 ## Limitations
@@ -103,7 +103,7 @@ ros2 run pickplace_manipulation pick_place red
 ros2 run pickplace_manipulation run_trials 5 1000
 
 ```
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/918a8885-57b0-4914-a318-45253d3ccf7c" />
+<img width="541" height="251" alt="image" src="https://github.com/user-attachments/assets/918a8885-57b0-4914-a318-45253d3ccf7c" />
 
 ### Train YOLO (separate environment, simulation closed)
 
