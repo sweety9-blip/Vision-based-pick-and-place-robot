@@ -106,7 +106,7 @@ ros2 run pickplace_manipulation pick_place red
 ros2 run pickplace_manipulation run_trials 5 1000
 
 ```
-<img width="541" height="251" alt="image" src="https://github.com/user-attachments/assets/918a8885-57b0-4914-a318-45253d3ccf7c" />
+
 
 ### Train YOLO (separate environment, simulation closed)
 
