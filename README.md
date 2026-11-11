@@ -59,7 +59,8 @@ With these sample sizes the two detectors perform comparably. 30/30 and 10/10 su
 - Live check at 3 random positions against the true cube position: error 0.2 to 6.4 mm.
 - Exported to ONNX and run with onnxruntime, because the system OpenCV (4.6) cannot parse the YOLOv8 ONNX graph.
 
-<img width="540" height="255" alt="image" src="https://github.com/user-attachments/assets/fe91994f-4e8b-4f7e-a72e-ce115bcd8261" />
+<img width="1920" height="1464" alt="image" src="https://github.com/user-attachments/assets/a69f6fda-c283-4d26-9709-19567b7de4f5" />
+
 <img width="540" height="255" alt="image" src="https://github.com/user-attachments/assets/ee6e8180-24cf-4207-b716-9232cea7dd18" />
 
 
